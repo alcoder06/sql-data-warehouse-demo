@@ -8,4 +8,5 @@ SELECT
     round((product_cost * (1.2 + random()*0.5))::numeric,2)
 FROM dim_products
 CROSS JOIN generate_series(1,10)
-LIMIT 200;
+LIMIT 400;
+
