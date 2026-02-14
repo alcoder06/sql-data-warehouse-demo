@@ -71,3 +71,28 @@ VALUES
 ('T-Shirt','Clothing','H&M',10),
 ('Sunglasses','Accessories','RayBan',75),
 ('Bluetooth Speaker','Electronics','Sony',90);
+
+-- Since there were only 200 rows in the fact table I decided to add more customers and products
+
+INSERT INTO dim_customers 
+(first_name, last_name, country, gender, age, created_at)
+VALUES
+('Carlos','Martinez','United States','Male',33,'2023-07-15'),
+('Laura','Garcia','United States','Female',28,'2023-07-20'),
+('Ethan','Harris','United Kingdom','Male',35,'2023-08-01'),
+('Amelia','Clark','United Kingdom','Female',26,'2023-08-05'),
+('Noah','Wagner','Germany','Male',31,'2023-08-10'),
+('Mia','Becker','Germany','Female',29,'2023-08-14'),
+('Kerem','Arslan','Turkey','Male',34,'2023-08-18'),
+('Elif','Yildiz','Turkey','Female',27,'2023-08-22'),
+('Timur','Saidov','Uzbekistan','Male',37,'2023-08-25'),
+('Nigora','Abdullayeva','Uzbekistan','Female',30,'2023-08-30');
+
+INSERT INTO dim_products
+(product_name, category, brand, product_cost)
+VALUES
+('iPad Air','Electronics','Apple',500),
+('Gaming Laptop','Electronics','Asus',1100),
+('Refrigerator','Home Appliances','Bosch',600),
+('Microwave Oven','Home Appliances','Samsung',150),
+('Tennis Racket','Sportswear','Wilson',80);
